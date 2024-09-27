@@ -1,0 +1,98 @@
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    transition: background 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect on Menu */
+.navbar ul li a:hover {
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Scrolled Navigation Style */
+.navbar.scrolled {
+    background: #222;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Background Colors */
+.home {
+    background-color: #f0f0f0;
+}
+
+.about {
+    background-color: #e0e0e0;
+}
+
+.services {
+    background-color: #d0d0d0;
+}
+
+.contact {
+    background-color: #c0c0c0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
